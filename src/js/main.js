@@ -9,9 +9,13 @@ var reportsWidget = {
       "</a>" +
       '<footer class="reports_docs">' +
       "{{#documents}}" +
+      '<div class="reports_inline">' +
       '<h3 class="reports_title">' +
       '<a href="{{url}}" target="_blank">{{title}}</a>' +
       "</h3>" +
+      '<h3 class="reports_file">&nbsp({{ file_size}} {{file_type}})' +
+      "</h3>" +
+      "</div>" +
       "{{/documents}}" +
       "</footer>" +
       "</article>" +
