@@ -7,45 +7,62 @@
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+
+#q4Wrapper h1,
+#q4Wrapper h3 {
   margin: 0;
 }
+
 #q4Wrapper h1 {
   font-size: 48px;
 }
+
 #q4Wrapper h3 {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
-#q4Wrapper header, #q4Wrapper footer {
+
+#q4Wrapper header,
+#q4Wrapper footer {
   background-color: #22272B;
 }
+
 #q4Wrapper header {
   padding: 20px;
 }
+
 #q4Wrapper footer {
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
 }
+
 #q4Wrapper article {
   text-align: center;
 }
+
 #q4Wrapper article img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
+
 #q4Wrapper a {
   display: inline-block;
   text-decoration: none;
   color: white;
   transition: transform 0.3s ease;
 }
+
 #q4Wrapper a:hover {
   transform: scale(1.05);
 }
+
 #q4Wrapper a span {
   opacity: 0.5;
+}
+
+.layout_title {
+  font-family: 'Roboto';
 }
 
 .layout_inner {
@@ -53,6 +70,7 @@
   margin: 0 auto;
   padding: 30px 20px;
 }
+
 .layout_header {
   margin-bottom: 30px;
   text-align: center;
@@ -60,5 +78,51 @@
 
 /* Begin styling the report items here! */
 .reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.reports_item {
+
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+@media (max-width:768px) {
+
+  .reports_item {
+    flex: 2;
+    flex-basis: 15%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .reports_item {
+    flex: 2;
+    flex-basis: 15%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width:769px) and (max-width:878px) {
+
+  .reports_item {
+    max-width: 180px;
+  }
+
+  img {
+    max-width: 180px;
+  }
+
+}
+
+@media (min-width:879px) and (max-width:939px) {
+  .reports_item {
+    max-width: 220px;
+  }
 }
